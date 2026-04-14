@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Something Special ✨</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #1a1a2e, #16213e, #0f3460);
+  overflow-x: hidden;
+  color: white;
+}
+
+.page {
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.active { display: flex; }
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.3rem;
+  max-width: 650px;
+}
+
+button {
+  padding: 12px 25px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(45deg,#ff4b5c,#ff758c);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+img {
+  width: 230px;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+/* STARS */
+.star {
+  position: fixed;
+  width: 2px;
+  height: 2px;
+  background: white;
+  animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle {
+  from { opacity: 0.3; }
+  to { opacity: 1; }
+}
+
+/* HEART */
+.heart {
+  position: fixed;
+  top: -10px;
+  color: #ff4b5c;
+  font-size: 18px;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to { transform: translateY(100vh); opacity: 0; }
+}
+
+/* TYPEWRITER */
+.type {
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+</style>
+</head>
+<body>
+
+<!-- MUSIC -->
+<audio autoplay loop>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- PAGE 1 -->
+<div class="page active" id="page1">
+  <h1>Hey, cutieeeee pieeeeeee  🌙</h1>
+ <img src="her.jpeg">
+  <p class="type" id="typeText"></p>
+  <button onclick="nextPage(2)">Continue</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="page2">
+  <h1>You Feel Different ✨</h1>
+  <p>yrrr dekhooo apki tarif me to kya hi boluuu bas me itni sunder itni pyariiii itni cuteee si itni sweeettttt to aap h hi phele seee or tarif me kya hi bolu apko compare me kar nhi sakta kisi se that will be your disrespect onlyyy bas samajh jaooo kitne pyareee ho aapp.... 😌</p>
+  <button onclick="nextPage(3)">Next</button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="page3">
+  <h1>THOUGHT ABOUT YOU 💭</h1>
+  <p>I kinda smile more these days… maybe you’re the reason  meri nanhi si pyari si jaann👀</p>
+  <button onclick="nextPage(4)">Next</button>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page" id="page4">
+  <h1>Your Vibe 💖</h1>
+  <img src="her.jpeg">
+  <p>yrrr you knoww tu kitni special h you are just like a person who deserve everyone means everyone to kabhi apne aap ko down mat hone dena or kabhi sad nhi honaaa cutieeee pieeeeeeeee ALWAYS STAYING LAUGHING ANS SMILING</p>
+  <button onclick="nextPage(5)">Next</button>
+</div>
+
+<!-- PAGE 5 -->
+<div class="page" id="page5">
+  <h1>Shyari For You ✨</h1>
+  <p>
+   TERI AAKHO KE SAMNE YE SAHER KON DEKEGA 
+TU DARIYA SI H YE LAHER KON DEKEGA
+TU KHOOBSURAT SE BHI JAYADA KHOOBSURAT H 
+TUJHE DEKHNE KE BAAD YE TAJ MAHAL KON DEKHEGA
+JAB TUJH PAR LIKHENE TERE NOOR PAR 
+TERE NOOR KO KOHINOOR LIKHEGE
+CHAND KE NOOR SA LIKHEGE 
+FOOL KI KUSHBHOO SA LIKHEGE
+CHAND SI SUNDERTA RAATO KI SAUGAT SURAJ KI LALIMA OR SWARG SI PARI KA HOOR LIKHEGE
+JAB BHI TUJH PAR LIKHEGE KUCH ASA LIKHEGE.........💫
+  </p>
+  <button onclick="nextPage(6)">Next</button>
+</div>
+
+<!-- PAGE 6 -->
+<div class="page" id="page6">
+  <h1>THE ANSWER OF THE QUESTION I ASKED 😏</h1>
+  <p>YRRRRR PTA H I AM NOT GOOD AT WORDS LIKE EVERYONE ELSE OR NA HI MUJHE FEELINGS JAYAGA EXPRESS KARNI AATI SOOO I CANT EXPRESS KI AAP MERE LIYE KITNE KHAS HO KITNE IMPORTANT HO BUT AGAR KOI SAMNE WALA MUJHSE PUCHE KI AAPKE BAARE ME TO MERA JAWAB YE HOGA KI EK LADKI H SEEDI SADHI BHOLA BHALI BILKUL CHAND KA TUKDA LAGTI H BINA SHRINGA KRE BINA SAJE BHI VO HUSN KI MALIKA LAGTI H USKA VO BHOLA SA ANDAAZ USKA VO MUSKURANA USKA  VO SHARMANA ACCHA LAGTA H MUJHE OR OR LOG BOLTE  H KI AGAR VO APSE DOOR CHALE JAYE TO AAPKO KAISA LAGEA TO SOCHO CHAND RAAT SE RUTH JAYE RASGULLE SE RAS GAYAB HO JAYE FOOLO MESE KUSHBU GAYAB HO JAYE CHIDIDYA CHEHANA BAND KARDE MERI ZINDGI IN JAISI HO JAYAGI BERANG BILKUL OR RHI BAAT UNPAR EK PARAGRAPH LIKHNE KI TO VO TO BAHUT KAM H UNPR TO KITAB TAK LIKHI JAA SAKTI H 💕</p>
+  <button onclick="openChat()">Text Me 💬</button>
+</div>
+
+<script>
+function nextPage(n){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page'+n).classList.add('active');
+}
+
+// TYPEWRITER
+const text = "I made this just to make you smile...";
+let i = 0;
+function typing(){
+  if(i < text.length){
+    document.getElementById('typeText').innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing, 50);
+  }
+}
+typing();
+
+// HEARTS
+setInterval(()=>{
+  const h = document.createElement('div');
+  h.className='heart';
+  h.innerText='❤️';
+  h.style.left=Math.random()*100+'vw';
+  h.style.animationDuration=(Math.random()*3+2)+'s';
+  document.body.appendChild(h);
+  setTimeout(()=>h.remove(),5000);
+},300);
+
+// STARS
+for(let i=0;i<80;i++){
+  const s=document.createElement('div');
+  s.className='star';
+  s.style.top=Math.random()*100+'vh';
+  s.style.left=Math.random()*100+'vw';
+  document.body.appendChild(s);
+}
+
+// WHATSAPP BUTTON
+function openChat(){
+  window.open("https://wa.me/91XXXXXXXXXX?text=Hey%20😊","_blank");
+}
+</script>
+
+</body>
+</html>
